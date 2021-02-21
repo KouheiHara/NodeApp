@@ -4,6 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "node dist/app.js",
+    "build": "babel ./src -d ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +19,11 @@
   },
   "homepage": "https://github.com/KouheiHara/NodeApp#readme",
   "dependencies": {
+    "@babel/core": "^7.12.17",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.17",
+    "@babel/preset-env": "^7.12.17"
   }
 }
